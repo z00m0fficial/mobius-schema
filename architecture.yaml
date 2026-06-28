@@ -1,0 +1,18 @@
+repository: mobius-schema
+version: 0.1.0
+status: alpha
+layer: platform-foundation
+department: Schema
+service: Shared Contracts
+mission: Define canonical platform contracts once and reuse them everywhere.
+capabilities:
+  - repository-dna
+  - memory-events
+  - pulse-metrics
+  - platform-change-proposals
+  - event-messages
+  - task-envelopes
+quality_gates:
+  strict_types_required: true
+  duplicate_contracts_forbidden: true
+  backwards_compatibility_review_required: true
