@@ -1,0 +1,38 @@
+mobius:
+  repository: mobius-schema
+  product: Mobius Platform
+  capability: Shared Contracts
+  department: Schema
+  owner: Mobius Technologies
+  mission: Define once and reuse everywhere.
+  maturity: implemented
+  consumes: []
+  produces:
+    - canonical-types
+    - shared-contracts
+  schemas:
+    - RepositoryDna
+    - MemoryEvent
+    - PulseMetricSnapshot
+    - MobiusEvent
+    - PlatformChangeProposal
+    - TaskEnvelope
+    - SyncReport
+  events: []
+  dependencies: []
+  dependents:
+    - atlas-core
+    - mobius-router
+    - mobius-memory
+    - mobius-pulse
+    - mobius-event-bus
+    - mobius-api
+    - mobius-command-center
+  pulse_metrics:
+    - schema-compliance
+  memory_events:
+    - schema-contract-created
+  architecture_version: Enterprise Alpha v0.1
+  genesis_version: Genesis v1.0
+  canon_version: Canon v1.0
+  sync_status: synchronized
